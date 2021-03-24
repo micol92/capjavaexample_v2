@@ -1,0 +1,8 @@
+---
+  applications:
+    - name: capbizservice
+      path: srv/target/capbizservice-exec.jar
+      random-route: true
+  services:
+    - MYERPS20
+    - MYERPS20-conn

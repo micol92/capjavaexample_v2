@@ -1,0 +1,74 @@
+{
+	"VCAP_SERVICES": {
+		"connectivity": [
+			{
+				"label": "connectivity",
+				"provider": null,
+				"plan": "lite",
+				"name": "MYERPS20-conn",
+				"tags": [
+					"connectivity",
+					"conn",
+					"connsvc"
+				],
+				"instance_guid": "60ed4c70-c304-4899-9b65-d04a3649a279",
+				"instance_name": "MYERPS20-conn",
+				"binding_guid": "ec057d32-36ca-4809-85db-46fb43b2eb7b",
+				"binding_name": null,
+				"credentials": {
+					"tenantmode": "dedicated",
+					"clientid": "sb-clone60ed4c70c30448999b65d04a3649a279!b687|connectivity!b5",
+					"token_service_domain": "authentication.eu20.hana.ondemand.com",
+					"token_service_url": "https://scpcfnl.authentication.eu20.hana.ondemand.com",
+					"xsappname": "clone60ed4c70c30448999b65d04a3649a279!b687|connectivity!b5",
+					"onpremise_proxy_ldap_port": "20001",
+					"onpremise_socks5_proxy_port": "20004",
+					"clientsecret": "ec057d32-36ca-4809-85db-46fb43b2eb7b$9N3Gb2m3hCj5spHmlJf1HLABthd0gEdCMRvYnqLb-Qg=",
+					"onpremise_proxy_http_port": "20003",
+					"url": "https://scpcfnl.authentication.eu20.hana.ondemand.com",
+					"onpremise_proxy_host": "10.0.4.5",
+					"uaadomain": "authentication.eu20.hana.ondemand.com",
+					"onpremise_proxy_port": "20003",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAwr81Yg/f5B897okFkqnjl7ITrHa11sn5HSoAMuvKJ1MUuKUyJCndJgIVHst7crvIvZPnj2Y7fnagnMLCrMGOpibn8U9c76qFyPjbyzosPNP0XxS44rhYPVFJoA1xAVA8aPcbYqH7qxDZEPfWBNdpj9lK45Qsw8UNe1FfZlh4byu/TRY0B8FcUQODAlhUuPaxRsl3OBBeWc6m2Nlmsm/yX0ov1gwSAuhRV5pP+wPq0qOrrrOFO9erOoPxBpaQ1Il6RkveaQdECfJ0K241SdoJ2ZyNFyZi8QHQ74JFRuMJlAmk3GOx1odFhFizSdvIz5LoGxeJXR0Bb/HaT7F44MFKgSbkjAzK/ihrJuW1s0/TTmaoe9rtrpx6jISX8miXqMQ1O5b2hcF6HwVFyxO5QPlW2DyFDe9JzgxjbWJoL5iKg3vXlkfHrL2M8cHmUyG3fqWPXUsJ5g/v0dXJU8JmYBiHMaJHWL1uUvHg5Y86sEgFsf1Q64VAOVHQEJYyANT+2rb0njq27J33Tl099T4jp/LOrbMi4d2bPHaJByNKMDkVAy3FtOyDidAhNeg2hlQtFe7GrqH/I8eYcSwG49XIKuvyZRL7DMgtfGNU95+uWEh6e/x8VYlOVnr0VxroWpPIBj9jOWsfspX1PH+jn7CnA4XC0KA//fjQUK7ABW9El2z021cCAwEAAQ==-----END PUBLIC KEY-----",
+					"identityzone": "scpcfnl",
+					"tenantid": "b7027df6-125b-4786-9bd2-fdce0cbbdb20",
+					"onpremise_proxy_rfc_port": "20001"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		],
+		"destination": [
+			{
+				"label": "destination",
+				"provider": null,
+				"plan": "lite",
+				"name": "MYERPS20",
+				"tags": [
+					"destination",
+					"conn",
+					"connsvc"
+				],
+				"instance_guid": "cb5beb5c-ffdf-432b-9920-36071ee8b554",
+				"instance_name": "MYERPS20",
+				"binding_guid": "4a4a5d9d-01f5-4168-a46a-179f82cb9650",
+				"binding_name": null,
+				"credentials": {
+					"uaadomain": "authentication.eu20.hana.ondemand.com",
+					"tenantmode": "dedicated",
+					"clientid": "sb-clonecb5beb5cffdf432b992036071ee8b554!b687|destination-xsappname!b2",
+					"instanceid": "cb5beb5c-ffdf-432b-9920-36071ee8b554",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAwr81Yg/f5B897okFkqnjl7ITrHa11sn5HSoAMuvKJ1MUuKUyJCndJgIVHst7crvIvZPnj2Y7fnagnMLCrMGOpibn8U9c76qFyPjbyzosPNP0XxS44rhYPVFJoA1xAVA8aPcbYqH7qxDZEPfWBNdpj9lK45Qsw8UNe1FfZlh4byu/TRY0B8FcUQODAlhUuPaxRsl3OBBeWc6m2Nlmsm/yX0ov1gwSAuhRV5pP+wPq0qOrrrOFO9erOoPxBpaQ1Il6RkveaQdECfJ0K241SdoJ2ZyNFyZi8QHQ74JFRuMJlAmk3GOx1odFhFizSdvIz5LoGxeJXR0Bb/HaT7F44MFKgSbkjAzK/ihrJuW1s0/TTmaoe9rtrpx6jISX8miXqMQ1O5b2hcF6HwVFyxO5QPlW2DyFDe9JzgxjbWJoL5iKg3vXlkfHrL2M8cHmUyG3fqWPXUsJ5g/v0dXJU8JmYBiHMaJHWL1uUvHg5Y86sEgFsf1Q64VAOVHQEJYyANT+2rb0njq27J33Tl099T4jp/LOrbMi4d2bPHaJByNKMDkVAy3FtOyDidAhNeg2hlQtFe7GrqH/I8eYcSwG49XIKuvyZRL7DMgtfGNU95+uWEh6e/x8VYlOVnr0VxroWpPIBj9jOWsfspX1PH+jn7CnA4XC0KA//fjQUK7ABW9El2z021cCAwEAAQ==-----END PUBLIC KEY-----",
+					"xsappname": "clonecb5beb5cffdf432b992036071ee8b554!b687|destination-xsappname!b2",
+					"identityzone": "scpcfnl",
+					"clientsecret": "4a4a5d9d-01f5-4168-a46a-179f82cb9650$ZaFAf--2EGXzdCsFd96jxBiClDIMo239_VfBBifUCyg=",
+					"tenantid": "b7027df6-125b-4786-9bd2-fdce0cbbdb20",
+					"uri": "https://destination-configuration.cfapps.eu20.hana.ondemand.com",
+					"url": "https://scpcfnl.authentication.eu20.hana.ondemand.com"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		]
+	}
+}
